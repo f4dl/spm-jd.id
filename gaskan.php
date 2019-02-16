@@ -7,7 +7,7 @@ Github : https://github.com/f4dl/spm-jd.id
 */
 echo "\e[93mJD.ID Spam Code
 \e[36m===========\e[91m>>>>>>>>>>\n\e[36mAuthor : f4dl
-Github : https://github.com/f4dl
+Github : https://github.com/f4dl/spm-jd.id
 \e[36m===========\e[91m>>>>>>>>>>";
 echo "\n\e[36mNo Target : ";
 $no = trim(fgets(STDIN, 1024));
@@ -35,16 +35,16 @@ for ($x=1; $x<=$loop; $x++) {
 	curl_setopt($c, CURLOPT_POST, 1);
 	$hasil = curl_exec($c);
 	if ($hasil == "true") {
-		echo "\e[92m$x. Code has been sent :)\n";
+		echo "\e[92m$x. Pesan Telah Terkirim :)\n";
 		flush();
 		sleep(1);
 	} else {
 		$loop += 1;
-		echo "\e[91m$x. Code failed to send :(\n\e[97mCount +1\n".($loop-$x)." remaining\n\e[93mSleep in 60s\n";
+		echo "\e[91m$x. Pesan Gagal Terkirim :(\n\e[97mCount +1\n".($loop-$x)." remaining\n\e[93mSleep in 60s\n";
 		flush();
 		sleep(60);
 	}
 }
 echo "\e[36m===========\e[91m>>>>>>>>>>\n";
-echo "\e[39mHappy Ending :)";
+echo "\e[39mSemoga Harimu Menyenangkan :)";
 ?>
